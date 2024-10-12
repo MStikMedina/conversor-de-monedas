@@ -1,5 +1,3 @@
-import javax.swing.*;
-
 import static javax.swing.JOptionPane.*;
 
 public class Pruebas {
