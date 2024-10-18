@@ -18,7 +18,7 @@ Este proyecto es una aplicación de consola en Java que permite la conversión d
 
 - `Logica.java`: Gestiona la lógica principal de la aplicación y presenta el menú de opciones.
 - `Api.java`: Realiza la solicitud HTTP a la API de ExchangeRate y maneja la conversión de monedas.
-- `MostrarResultado.java`: Muestra al usuario el valor convertido después de ingresar la cantidad.
+- `Api.java`: Esta clase también muestra al usuario el valor convertido después de ingresar la cantidad.
 - `DatosJson.java`: Representa el formato JSON que devuelve la API para la conversión.
 - `FinishProgram.java`: Muestra mensajes cuando el programa finaliza o cuando se ingresa una opción inválida.
 
