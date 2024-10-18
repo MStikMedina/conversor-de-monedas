@@ -42,8 +42,7 @@ Este proyecto es una aplicación de consola en Java que permite la conversión d
 2. Asegúrate de tener **Java** instalado en tu sistema.
 3. Importa el proyecto en tu IDE preferido.
 4. Añade la biblioteca **Gson** a tu proyecto (puedes descargarla desde [aquí](https://github.com/google/gson)).
-5. 
-6. Ejecuta la clase `Logica.java` para iniciar la aplicación.
+5. Ejecuta la clase `Logica.java` para iniciar la aplicación.
 
 ## 🌐 API Utilizada
 
