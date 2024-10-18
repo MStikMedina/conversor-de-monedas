@@ -20,7 +20,6 @@ public class Logica {
     public void opcionUsuario() throws IOException, InterruptedException {
         // Crear instancias de las clases necesarias para realizar la conversión y manejar los mensajes.
         Api api = new Api();
-        MostrarResultado mostrarResultado = new MostrarResultado();
         FinishProgram finishProgram = new FinishProgram();
 
         // Configurar el menú de opciones de conversión de moneda.
@@ -53,37 +52,37 @@ public class Logica {
                     case 1: {
                         api.par1 = dolar;
                         api.par2 = pesoArgentino;
-                        mostrarResultado.mostrarResultado();
+                        api.mostrarResultado();
                         break;
                     }
                     case 2: {
                         api.par1 = pesoArgentino;
                         api.par2 = dolar;
-                        mostrarResultado.mostrarResultado();
+                        api.mostrarResultado();
                         break;
                     }
                     case 3: {
                         api.par1 = dolar;
                         api.par2 = realBrasil;
-                        mostrarResultado.mostrarResultado();
+                        api.mostrarResultado();
                         break;
                     }
                     case 4: {
                         api.par1 = realBrasil;
                         api.par2 = dolar;
-                        mostrarResultado.mostrarResultado();
+                        api.mostrarResultado();
                         break;
                     }
                     case 5: {
                         api.par1 = dolar;
                         api.par2 = pesoColombiano;
-                        mostrarResultado.mostrarResultado();
+                        api.mostrarResultado();
                         break;
                     }
                     case 6: {
                         api.par1 = pesoColombiano;
                         api.par2 = dolar;
-                        mostrarResultado.mostrarResultado();
+                        api.mostrarResultado();
                         break;
                     }
                     case 7: {

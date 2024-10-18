@@ -11,7 +11,7 @@ import java.net.http.HttpResponse;
 // Clase para gestionar la conversión de monedas utilizando la API de ExchangeRate-API
 public class Api {
     // Parámetros de la conversión y mensajes para mostrar en el JOptionPane
-    String par1, par2, mensajeResultado;
+    String par1, par2, mensajeResultado, mensajeValor;
     BigDecimal inputValor;
 
     // Realiza la solicitud HTTP a la API y convierte la cantidad de una moneda a otra
@@ -29,5 +29,22 @@ public class Api {
         DatosJson datosJson = new Gson().fromJson(response.body(), DatosJson.class);
         mensajeResultado = inputValor + " " + par1 + " equivale a " + datosJson.conversion_result() + " " + par2;
         showMessageDialog(null, mensajeResultado, "Resultado", INFORMATION_MESSAGE);
+    }
+
+    public void mostrarResultado() throws IOException, InterruptedException {
+        // Solicita al usuario el valor a convertir y llama al metodo de la conversión
+        mensajeValor = """
+                Instrucciones:
+                
+                - Las comas (,) y los puntos (.) representan decimal
+                
+                Ingresa el valor que deseas convertir:
+                
+                """;
+
+        inputValor =
+                BigDecimal.valueOf(Long.parseLong(showInputDialog(null, mensajeValor, par1 + " ==> " + par2,
+                        QUESTION_MESSAGE).replace(",", ".")));
+        convertidorMonedas();
     }
 }
